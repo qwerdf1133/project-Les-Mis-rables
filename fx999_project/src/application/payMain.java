@@ -17,7 +17,7 @@ public class payMain extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("pay.fxml"));
+			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("payMain.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			stage.setTitle("레미제라블 결제화면");
@@ -42,7 +42,7 @@ public class payMain extends Application {
 		launch(args);
 	}
 	
-	// 창 닫기 눌렀을 때 나오는 얼럿 메소드
+	// 창 닫기를 눌렀을 때 나오는 얼럿 메소드
 	public void Cancel(Stage stage){
 	    Alert alert = new Alert(AlertType.CONFIRMATION);
 	    alert.setTitle("결제 창 나가기");				

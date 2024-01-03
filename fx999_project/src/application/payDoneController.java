@@ -19,7 +19,7 @@ public class payDoneController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
-		// 결제 완료 후 뜨는 창의 확인 버튼을 누르면 모든 창이 꺼짐
+		// 결제 완료 창의 확인 버튼을 누르면 모든 창이 꺼짐
 		btnExit.setOnAction((e)->{
 //			System.exit(0);
 			Platform.exit();

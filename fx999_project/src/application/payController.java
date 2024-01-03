@@ -16,20 +16,21 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class payController implements Initializable{
+	// musicalName
 	
-	@FXML private Label lbldate;
+	@FXML private Label musicalName;
 	@FXML private ToggleGroup group;
 	@FXML private RadioButton card, kakao, samsung, apple, naver, toss;
 	@FXML private CheckBox terms1, terms2, terms3, terms4;
 	@FXML private Button pay;
-	@FXML private TextArea sit, price, musicalName;
+	@FXML private TextField price, sit;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -72,24 +73,6 @@ public class payController implements Initializable{
 					System.out.println("실패 거절창");
 				}
 				
-				// 체크를 하지 않으면 fail fxml로 이동 (보류)
-//				FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("payFail.fxml"));
-//				Parent root1;
-//				Stage stage;
-//				
-//				try {
-//					root1 = (Parent) fxmlLoader.load();
-//					stage = new Stage();
-//					stage.initModality(Modality.APPLICATION_MODAL);
-//					stage.initStyle(StageStyle.UTILITY);
-//					stage.setTitle("레미제라블 결제 실패");
-//					stage.setScene(new Scene(root1));
-//					stage.show();
-//					
-//				} catch (IOException e1) {
-//					e1.printStackTrace();
-//					return;
-//				};
 			} // 필수 약관 if 문 끝
 			
 		}); // 결제하기 이벤트 끝 
