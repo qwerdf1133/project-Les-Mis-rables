@@ -1,6 +1,9 @@
-module fx999_project {
+open module fx999_project {
 	requires javafx.controls;
 	requires javafx.fxml;
+	requires javafx.web;
+	requires java.sql;
+	requires java.desktop;
 	
-	opens application to javafx.graphics, javafx.fxml;
+//	opens pay to javafx.graphics, javafx.fxml;
 }
